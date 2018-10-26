@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <div class = "box_container" id = "register_box">
+      <div id = "help_link"><a target = "_blank" href = "https://support.google.com/maps/answer/18539?co=GENIE.Platform%3DDesktop&hl=en">How to find your latitude/longitude</a></div>
+      <div id = "register_heading">Enter registration details</div>
+
+      <form class="" method="POST" id = "register_form">
+          {% csrf_token %}
+
+            <div class = "field_container" id = "uid">
+              <div class="field_label" id = "uid_label">{{ form.uid.label_tag }}</div>
+              <div class="field_field" id = "uid_input">{{ form.uid}}</div>
+              <span class="field_help" id = "uid_help">{{ form.uid.help_text }}</span>
+            </div>
+            <div class = "field_container" id = "first_name">
+              <div class="field_label" id = "first_name_label">{{ form.first_name.label_tag }}</div>
+              <div class="field_field" id = "first_name_input">{{ form.first_name}}</div>
+              <span class="field_help" id = "first_name_help">{{ form.first_name.help_text }}</span>
+            </div>
+            <div class = "field_container" id = "last_name">
+              <div class="field_label" id = "last_name_label">{{ form.last_name.label_tag }}</div>
+              <div class="field_field" id = "last_name_input">{{ form.last_name}}</div>
+              <span class="field_help" id = "last_name_help">{{ form.last_name.help_text }}</span>
+            </div>
+            <div class = "field_container" id = "latitude">
+              <div class="field_label" id = "latitude_label">{{ form.latitude.label_tag }}</div>
+              <div class="field_field" id = "latitude_input">{{ form.latitude}}</div>
+              <span class="field_help" id = "latitude_help">{{ form.latitude.help_text }}</span>
+            </div>
+            <div class = "field_container" id = "longitude">
+              <div class="field_label" id = "longitude_label">{{ form.longitude.label_tag }}</div>
+              <div class="field_field" id = "longitude_input">{{ form.longitude}}</div>
+              <span class="field_help" id = "longitude_help">{{ form.longitude.help_text }}</span>
+            </div>
+
+          <br><br>
+          <input type="submit" class = "btton" id = "submit" value="Register">
+      </form>
+      <div id = error_box>
+        <div class="field_error" id = "uid_error">{{ form.uid.errors }}</div>
+        <div class="field_error" id = "first_name_error">{{ form.first_name.errors }}</div>
+        <div class="field_error" id = "last_name_error">{{ form.last_name.errors }}</div>
+        <div class="field_error" id = "latitude_error">{{ form.latitude.errors }}</div>
+        <div class="field_error" id = "longitude_error">{{ form.longitude.errors }}</div>
+      </div>
+    </div>
+
+
+
+{% endblock %}

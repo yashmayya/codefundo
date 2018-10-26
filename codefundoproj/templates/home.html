@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class = "box_container" id = "welcome_box">
+        <div id = "welcome_heading">Disaster Mitigation Tool</div>
+        <div id = "welcome_text">This tool will improve disaster preparedness by pointing out optimal locations to build disaster shelters in the city. It may also be used in the event of an ongoing disaster to help identify where to send disaster relief and first responders to quickly and effeciently help as many people as possible. Please enter your unique UID and current location in the following page.</div>
+        <div class = "btton" id = "proceed_button"> <a href = "{% url 'new_userdata' %}">PROCEED</a></div>
+    </div>
+
+{% endblock %}

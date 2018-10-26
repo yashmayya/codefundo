@@ -1,0 +1,195 @@
+.mybutton{
+    margin-right: 50px;
+}
+
+tr{
+
+}
+
+#upper_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  position: absolute;
+  color:white;
+  background-color: #f7f5f9;
+  z-index = 0;
+}
+#welcome_box{
+  height: 300px;
+  width: 500px;
+
+}
+
+#thanks_box{
+  height: 130px;
+  width: 500px;
+}
+
+#welcome_heading{
+  position: absolute;
+  top: 5px;
+  font-size: 25px;
+  text-align: center;
+}
+
+#welcome_text{
+  position: absolute;
+  top: 80px;
+  font-size: 15px;
+  text-align: center;
+}
+
+#proceed_button{
+  bottom: 20px;
+}
+
+#register_heading{
+  position: absolute;
+  top: 5px;
+  font-size: 25px;
+  text-align: center;
+}
+
+#register_form{
+  position: relative;
+  top: 80px;
+  width: 90%;
+  height: 250px;
+}
+
+
+#register_box{
+  min-height: 350px;
+  height: auto;
+  width: 400px;
+}
+#submit{
+  position: absolute;
+  bottom: 6px;
+  left: 45%;
+}
+
+#rego_button{
+  border-color: #0000007a;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  opacity: 0.9;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
+  height: 30px;
+}
+
+#uid{
+  top: 5px;
+}
+
+#first_name{
+  top: 45px;
+}
+
+#last_name{
+  top: 85px;
+}
+
+#latitude{
+  top: 125px;
+}
+
+#longitude{
+  top: 165px;
+}
+
+#error_box{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 360px;
+  width: 400px;
+}
+#clearfix{
+  clear: both;
+}
+
+#help_link{
+  position: absolute;
+  top: -35px;
+  width: 400px;
+  color: blue;
+  opacity: 0.8;
+}
+
+a :link{
+  color: inherit;
+}
+
+a:visited{
+  color: inherit;
+}
+
+a:hover{
+  color: inherit;
+}
+
+div.box_container{
+  position: absolute;
+  display: flex;
+  vertical-align: middle;
+  text-align: center;
+  padding: 5px;
+  align-items: center;
+  flex-direction: column;
+  background-color: #242933;
+  border-color: #0000007a;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  opacity: 0.9;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
+}
+
+div.btton{
+  position: absolute;
+  display: flex;
+  padding: 2px;
+  align-items: center;
+  justify-content: center;
+  bottom: 20px;
+  width: 100px;
+  height: 30px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #242933;
+  border-color: #0000007a;
+}
+
+div.field_container{
+  position: absolute;
+  display: flex;
+  height: 30px;
+  width: 90%;
+}
+
+div.field_label{
+  position: absolute;
+  left:3px;
+}
+
+div.field_field{
+  position: absolute;
+  right:3px;
+}
+
+div.field_error{
+  padding-right: 5px;
+  margin: 2px;
+  width: 100%;
+  text-align: center;
+  color: red;
+  opacity: 0.8;
+  background-color: #ffec2196;
+  opacity: 0.9;
+}
